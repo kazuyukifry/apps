@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>{{ page.title }}</title>
+<!--
+  Spread アプリ内の「ライセンス・帰属」画面（SwiftUI）と同じ佇まいに揃えている：
+    .font(.footnote.monospaced()) / .foregroundStyle(.secondary) / .padding(20)
+  色は iOS の label / secondaryLabel の実値をそのまま使い、ライト・ダークに追従する。
+  外部リソース（Web フォント・CDN・解析）は一切読み込まない。
+  「写真もデータも外に出ない」と書いてあるページ自身が外部へリクエストを出さないため。
+-->
+<style>
+:root {
+  /* iOS の secondaryLabel / label（ライト） */
+  --ink-secondary: rgba(60, 60, 67, 0.6);
+  --ink-primary: rgba(0, 0, 0, 0.85);
+  --bg: #ffffff;
+  --rule: rgba(60, 60, 67, 0.18);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* iOS の secondaryLabel / label（ダーク） */
+    --ink-secondary: rgba(235, 235, 245, 0.6);
+    --ink-primary: rgba(255, 255, 255, 0.88);
+    --bg: #000000;
+    --rule: rgba(235, 235, 245, 0.18);
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0 auto;
+  max-width: 38rem;
+  padding: 2.5rem 20px calc(4rem + env(safe-area-inset-bottom));
+  background: var(--bg);
+  color: var(--ink-secondary);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+/* 見出しは大きくせず、色の強さだけで階層をつける（本文と同じ静けさを保つ） */
+h1, h2, h3 {
+  color: var(--ink-primary);
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+h1 { margin-bottom: 1.7em; }
+h2 { margin-top: 2.6em; margin-bottom: 0.4em; }
+h3 { margin-top: 2em; margin-bottom: 0.2em; }
+
+p, ul, ol { margin: 0 0 1.7em; }
+ul, ol { padding-left: 1.6em; }
+li { margin-bottom: 0.4em; }
+
+a {
+  color: var(--ink-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 3em 0;
+}
+
+code {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+/* 段落の折り返しが monospace で不格好にならないよう、単語の途中では割らない */
+p { overflow-wrap: break-word; }
+</style>
+</head>
+<body>
+{{ content }}
+</body>
+</html>

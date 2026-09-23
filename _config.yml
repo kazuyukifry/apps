@@ -1,0 +1,20 @@
+# apps.kfgopro.com — アプリの公開ページ（プライバシーポリシー／サポート）
+#
+# テーマは使わない。GitHub Pages の既定テーマ（jekyll-theme-primer）は
+# 「apps」というサイト名の h1 をページ先頭に挿し込み、外部 CDN の anchor.js も
+# 読み込むため、静かな読み物として成立しなかった。
+# `_layouts/default.html`（自前・自己完結）がテーマのレイアウトより優先される。
+
+title: apps
+
+# 全ページに自前レイアウトを当てる（各ファイルの front matter でも指定しているが、
+# 追加ページで書き忘れても既定でこちらが効くようにしておく）
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - .DS_Store

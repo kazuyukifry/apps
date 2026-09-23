@@ -1,3 +1,9 @@
+---
+layout: default
+title: Privacy Policy — Spread
+lang: en
+---
+
 # Privacy Policy
 
 Last updated: September 13, 2026
@@ -24,3 +30,7 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 ## Contact Us
 If you have any questions about this Privacy Policy, please contact us via Instagram DM: [@kfgopro](https://instagram.com/kfgopro/)
+
+---
+
+日本語版は [こちら](privacy-policy-ja) をご覧ください。
