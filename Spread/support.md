@@ -14,7 +14,7 @@ If you have any questions, bug reports, or feature requests, please feel free to
 Please contact us via Instagram DM: [@kfgopro](https://instagram.com/kfgopro/)
 
 ## Privacy Policy
-[Privacy Policy](privacy-policy)
+Please see our [Privacy Policy](privacy-policy).
 
 ---
 
