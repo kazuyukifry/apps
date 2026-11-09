@@ -13,9 +13,6 @@ If you have any questions, bug reports, or feature requests, please feel free to
 ## Contact
 Please contact us via Instagram DM: [@kfgopro](https://instagram.com/kfgopro/)
 
-## Privacy Policy
-Please see our [Privacy Policy](privacy-policy).
-
 ---
 
 日本語版は [こちら](support-ja) をご覧ください。

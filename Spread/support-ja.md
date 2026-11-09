@@ -13,9 +13,6 @@ Spread をご利用いただきありがとうございます。
 ## お問い合わせ
 Instagram の DM よりご連絡ください：[@kfgopro](https://instagram.com/kfgopro/)
 
-## プライバシーポリシー
-Spread のプライバシーポリシーは [こちら](privacy-policy-ja) をご覧ください。
-
 ---
 
 For the English version, see [Support](support).
